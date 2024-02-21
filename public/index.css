@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+.nav-link-custom {
+    color: black !important;
+    /* Đặt màu chữ tại đây */
+}
+
+*{
+    background-color: rgb(255, 255, 255);
+}
+
+.fa-solid{
+    color: #ce5026;
+}
+
+.text-custom {
+    color: #ce5026 !important;
+}
+
+.custom-btn{
+    background-color: #ce5026; 
+    color: #fff;
+    transition: 0.5s;
+}
+
+.custom-btn:hover{
+    background-color: #000000;
+    color: #fff;
+}
+
+nav div div ul li::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: #ce5026;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}   
+
+nav div div ul li:hover::after {
+    width: 90%;
+}
+
+.orange-border {
+    border: 2px solid #ce5026;
+    background-color: #ce5026;
+    color: #fff;
+    padding: 2px 5px 2px 5px;
+    border-radius: 5px;
+}
+

@@ -1,0 +1,186 @@
+<%- include('./layout/header') %> <!-- Include the header -->
+
+<div class="container mt-3">
+    <div class="row">
+        <!-- Phần Mới cập nhật -->
+        <div class="col-md-8">
+            <h2 class="mb-3">Mới cập nhật</h2>
+            <div class="dropdown-divider"></div>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3 d-flex justify-content-center align-items-center">
+                            <img src="https://i.pinimg.com/236x/e7/73/56/e773567d82f04aced346fb502b652f5d.jpg" alt="User" class="img-fluid rounded-circle"
+                                style="max-width: 150px;">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="d-flex justify-content-between mb-2">
+                                <div class="text-right">Công việc mới</div>
+                                <div class="orange-border text-left">Thời hạn: 15 giờ tối</div>
+                            </div>
+                            <div class="progress mb-2">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
+                                    aria-valuemax="100">25%</div>
+                            </div>
+                            <h5 class="card-title">Công việc mẫu - Hướng dẫn sử dụng phần mềm</h5>
+                            <p class="card-text"><b>Tạo lúc </b>10:50:09 sa, Thứ Hai, 19 tháng 2 năm 2024</p>
+                            <button type="button" class="btn custom-btn">Nhấn để hoàn thành công việc</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3 d-flex justify-content-center align-items-center">
+                            <img src="https://i.pinimg.com/236x/e7/73/56/e773567d82f04aced346fb502b652f5d.jpg" alt="User"
+                                class="img-fluid rounded-circle" style="max-width: 150px;">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="d-flex justify-content-between mb-2">
+                                <div class="text-right">Công việc mới</div>
+                                <div class="orange-border text-left">Thời hạn: 15 giờ tối</div>
+                            </div>
+                            <div class="progress mb-2">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100">25%</div>
+                            </div>
+                            <h5 class="card-title">Công việc mẫu - Hướng dẫn sử dụng phần mềm</h5>
+                            <p class="card-text"><b>Tạo lúc </b>10:50:09 sa, Thứ Hai, 19 tháng 2 năm 2024</p>
+                            <button type="button" class="btn custom-btn">Nhấn để hoàn thành công việc</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3 d-flex justify-content-center align-items-center">
+                            <img src="https://i.pinimg.com/236x/e7/73/56/e773567d82f04aced346fb502b652f5d.jpg" alt="User"
+                                class="img-fluid rounded-circle" style="max-width: 150px;">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="d-flex justify-content-between mb-2">
+                                <div class="text-right">Công việc mới</div>
+                                <div class="orange-border text-left">Thời hạn: 15 giờ tối</div>
+                            </div>
+                            <div class="progress mb-2">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100">25%</div>
+                            </div>
+                            <h5 class="card-title">Công việc mẫu - Hướng dẫn sử dụng phần mềm</h5>
+                            <p class="card-text"><b>Tạo lúc </b>10:50:09 sa, Thứ Hai, 19 tháng 2 năm 2024</p>
+                            <button type="button" class="btn custom-btn">Nhấn để hoàn thành công việc</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    
+        <!-- Phần Tổng quan -->
+        <div class="col-md-4">
+            <h2 class="mb-3">Tổng quan</h2>
+            <div class="dropdown-divider"></div>
+            <div class="card">
+                <div class="card-body">
+                    <!-- Biểu đồ hình tròn -->
+                    <div id="chart" style="width: 100%; height: 400px;">
+                        <canvas id="myChart" style="width: 100%; height: 100%;"></canvas>
+                    </div>
+                    <!-- Các mục -->
+                    <ul class="list-group mt-3">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Mới
+                            <span class="badge badge-primary badge-pill">5</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Đang thực hiện
+                            <span class="badge badge-warning badge-pill">8</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Chờ duyệt
+                            <span class="badge badge-secondary badge-pill">3</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Hoàn thành
+                            <span class="badge badge-success badge-pill">15</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Tạm dừng
+                            <span class="badge badge-danger badge-pill">2</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-12">
+                    <p>Bộ phận</p>
+                    <div class="dropdown-divider"></div>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Ban lãnh đạo</h5>
+                            <div class="progress mb-2">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
+                                    aria-valuemax="100">25%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Phòng kế toán</h5>
+                            <div class="progress mb-2">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
+                                    aria-valuemax="100">25%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Phòng kinh doanh</h5>
+                            <div class="progress mb-2">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
+                                    aria-valuemax="100">25%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Phòng kỹ thuật</h5>
+                            <div class="progress mb-2">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
+                                    aria-valuemax="100">25%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-12 mb-3">
+                    <p>Thẻ thông dụng</p>
+                    <div class="dropdown-divider"></div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">#1 r&d (1 công việc)</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">#1 công việc mẫu (1 công việc)</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('./layout/footer') %> <!-- Include the footer -->

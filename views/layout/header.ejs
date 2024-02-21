@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>My Website</title>
+    <!-- Add your CSS or other head elements here -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="/index.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        
+
+    </style>
+
+</head>
+
+<body>
+    <!-- Your index page content goes here -->
+    <div class="container navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoYPoWIr7GYtw7NgUpwMZK89b8qx-HKwxid3F7PiES8w&s" alt="Logo" width="55px">
+        </a>
+        <div class="mx-auto order-0">
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="width: 500px;">
+                <button class="btn btn-outline-dark my-2 my-sm-0 border-0" style="background-color: #ce5026; color: #fff;" type="submit">Search</button>
+            </form>
+        </div>
+        <div class="dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <img src="user-icon.png" style="max-height: 30px;">
+                Shelby
+            </a>
+            <div class="dropdown-menu" aria-labelledby="userDropdown">
+                <a class="dropdown-item text-custom" href="#"><i class="fa-solid fa-address-card mr-2"></i>Thông tin cá nhân</a>
+                <a class="dropdown-item" href="#"><i class="fa-solid fa-lock mr-2"></i>Thay đổi mật khẩu</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#"><i class="fa-solid fa-people-group mr-2"></i>Thông tin tổ chức</a>
+                <a class="dropdown-item" href="#"><i class="fa-solid fa-dollar-sign mr-2"></i>Affiliate</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#"><i class="fa-solid fa-right-from-bracket mr-2"></i>Logout</a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="container-fluid navbar navbar-expand-lg navbar-light bg-light border">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active mr-3">
+                        <a class="nav-link" href="#"><i class="pr-1 fa-solid fa-house"></i>Mới nhất</a>
+                    </li>
+                    <li class="nav-item dropdown mr-3">
+                        <a class="nav-link-custom nav-link dropdown-toggle" href="#" id="navbarDropdownJobs" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-suitcase"></i>
+                            Các công việc
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownJobs">
+                            <a class="dropdown-item" href="#"><i class="fa-solid fa-table-list mr-2"></i>Bảng trạng thái</a>
+                            <a class="dropdown-item" href="#"><i class="fa-solid fa-tag mr-2"></i>Bảng phân loại</a>
+                            <a class="dropdown-item" href="#"><i class="fa-solid fa-star mr-2"></i>Quan trọng</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"><i class="fa-solid fa-circle-plus mr-2"></i>Thêm công việc</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown mr-3">
+                        <a class="nav-link-custom nav-link dropdown-toggle" href="#" id="navbarDropdownStaff" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-user-group"></i>
+                            Nhân lực
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownStaff">
+                            <a class="dropdown-item" href="#"><i class="fa-solid fa-users mr-2"></i>Các nhân sự</a>
+                            <a class="dropdown-item" href="#"><i class="fa-solid fa-people-group mr-2"></i>Các bộ phận</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"><i class="fa-solid fa-circle-plus mr-2"></i>Thêm mới</a>
+                            <a class="dropdown-item" href="#"><i class="fa-solid fa-user-plus mr-2"></i>Mời nhân sự</a>
+                        </div>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link-custom nav-link" href="#"><i class="pr-1 fa-solid fa-clock"></i>Trễ hạn</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link-custom nav-link" href="#"><i class="pr-1 fa-solid fa-calendar"></i>Lịch làm việc</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link-custom nav-link" href="#"><i class="pr-1 fa-solid fa-file"></i>Tài liệu</a>
+                    </li>
+                    <li class="nav-item dropdown mr-3">
+                        <a class="nav-link-custom nav-link dropdown-toggle" href="#" id="navbarDropdownMore" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"><i class="pr-1 fa-solid fa-ellipsis-vertical"></i>
+                            Hơn nữa
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMore">
+                            <a class="dropdown-item" href="#"><i class="fa-solid fa-clock-rotate-left mr-2"></i>Hoạt động gần đây</a>
+                            <a class="dropdown-item" href="#"><i class="fa-solid fa-dollar-sign mr-2"></i>Lịch sử thanh toán</a>
+                            <a class="dropdown-item" href="#"><i class="fa-solid fa-book-open mr-2"></i>Hướng dẫn</a>
+                            <a class="dropdown-item" href="#"><i class="fa-solid fa-phone mr-2"></i>Hỗ trợ</a>
+                            <a class="dropdown-item" href="#"><i class="fa-solid fa-handshake mr-2"></i>Góp ý</a>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </nav>
