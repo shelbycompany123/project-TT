@@ -1,0 +1,47 @@
+<%- include('../layout/header.ejs') %>
+
+<div class="container mt-3" style="height: 400px;">
+    <div class="row">
+        <div class="col-md-8">
+            <!-- Phần Quản lý công việc -->
+            <h5 class="mb-3">Quản lý công việc</h5>
+            <!-- Bảng hiển thị các công việc -->
+            <p>Trạng thái công việc</p>
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <div class="me-3">
+                            <span class="badge bg-primary">Chờ nhận:</span>
+                            <span class="badge bg-primary">8</span>
+                        </div>
+                        <div class="me-3">
+                            <span class="badge bg-warning">Đang làm:</span>
+                            <span class="badge bg-warning">8</span>
+                        </div>
+                        <div class="me-3">
+                            <span class="badge bg-secondary">Chờ duyệt:</span>
+                            <span class="badge bg-secondary">8</span>
+                        </div>
+                        <div class="me-3">
+                            <span class="badge bg-success">Hoàn thành:</span>
+                            <span class="badge bg-success">8</span>
+                        </div>
+                        <div class="me-3">
+                            <span class="badge bg-danger">Tạm dừng:</span>
+                            <span class="badge bg-danger">8</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <!-- Phần Quan trọng -->
+            <h5>Quan trọng và chưa hoàn hành</h5>
+        </div>
+    </div>
+</div>
+
+    
+
+
+<%- include('../layout/footer.ejs') %>
