@@ -1,0 +1,49 @@
+.dropdown-menu .dropdown-item:hover {
+    background-color: transparent !important;
+}
+
+.navbar-nav li:hover .custom-dropdown-menu {
+    display: block;
+}
+
+.navbar-nav li::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: rgb(255, 255, 255);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navbar-nav li:hover::after {
+    width: 95%;
+}
+
+.navbar-nav .nav-item .dropdown-menu a {
+    transition: 0.5s;
+}
+
+.navbar-nav .nav-item .dropdown-menu a:hover {
+    margin-left: 4px;
+}
+
+/* CSS calendar */
+#calendar {
+    background-color: #212529;
+}
+
+.fc-daygrid-day-number {
+    text-decoration: none;
+    color: white;
+}
+
+.fc-toolbar-title {
+    color: white;
+}
+
+.fc-toolbar {
+    background-color: black;
+    color: white;
+    margin-bottom: 100px;
+}
