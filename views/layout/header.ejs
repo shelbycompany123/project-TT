@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
-    <title>My Website</title>
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <title><%= title  %></title>
     <!-- Add your CSS or other head elements here -->
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -17,35 +19,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
 
-
     <!-- Animate CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <!-- Calendar -->
+    <!-- FullCalendar CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.css" rel="stylesheet">
     <style>
-        
     </style>
-
 </head>
 
 
-<body>
+<body style="background-color: black;">
     <!-- Your index page content goes here -->
     <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="/">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoYPoWIr7GYtw7NgUpwMZK89b8qx-HKwxid3F7PiES8w&s" alt="Logo" width="55px">
+            <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoYPoWIr7GYtw7NgUpwMZK89b8qx-HKwxid3F7PiES8w&s" alt="Logo" width="55px"> -->
+            <h2 class="text-warning title-ct">Quản lý công việc</h2>
         </a>
         <div class="mx-auto">
             <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="width: 500px;">
-                <button class="btn btn-outline-dark" type="submit" style="background-color: #ce5026; color: #fff;">Search</button>
+                <input class="form-control me-2 bg-light border-0" type="search" placeholder="Tìm công việc" aria-label="Search" style="width: 400px;">
+                <button class="btn btn-dark" type="submit" style="color: #fff;">Search</button>
             </form>
         </div>
-        <div class="dropdown">
+        <div class="dropdown text-light">
             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="user-icon.png" style="max-height: 30px;">
+                <img class="rounded-circle me-2" src="https://i.pinimg.com/564x/cd/62/53/cd625349eaffc71520b7075e42b7e81c.jpg" style="max-height: 30px;">
                 Shelby
             </a>
             <ul class="dropdown-menu" aria-labelledby="userDropdown">
@@ -58,67 +58,47 @@
                 <li><a class="dropdown-item" href="#"><i class="fas fa-right-from-bracket me-2"></i>Logout</a></li>
             </ul>
         </div>
-    </nav>
+    </div>
 </div>
 
     
-    <nav class="container-fluid navbar navbar-expand-lg navbar-light bg-light border">
+    <nav class="container-fluid navbar navbar-expand-lg navbar-light bg-dark">
         <div class="container">
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active me-5">
-                        <a class="nav-link" href="/"><i class="me-1 fa-solid fa-house"></i>Mới nhất</a>
+                    <li class="nav-item active me-5"">
+                        <a class="nav-link text-light" href="/"><i class="me-1 fa-solid fa-house"></i>Mới nhất</a>
                     </li>
                     <li class="nav-item dropdown me-5">
-                        <a class="nav-link-custom nav-link dropdown-toggle" href="#" id="navbarDropdownJobs" role="button"
+                        <a class="nav-link-custom nav-link dropdown-toggle text-light" href="#" id="navbarDropdownJobs" role="button"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="me-1 fa-solid fa-suitcase"></i>
                             Các công việc
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownJobs">
-                            <a class="dropdown-item" href="/table-route"><i class="fa-solid fa-table-list me-2"></i>Bảng trạng thái</a>
-                            <a class="dropdown-item" href="/table-category"><i class="fa-solid fa-tag me-2"></i>Bảng phân loại</a>
-                            <a class="dropdown-item" href="/important-page"><i class="fa-solid fa-star me-2"></i>Quan trọng</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="/create-job"><i class="fa-solid fa-circle-plus me-2"></i>Thêm công việc</a>
+                        <div class="dropdown-menu bg-black" aria-labelledby="navbarDropdownJobs">
+                            <a class="dropdown-item text-light" href="/table-route"><i class="fa-solid fa-table-list me-2"></i>Bảng trạng thái</a>
+                            <a class="dropdown-item text-light" href="/table-category"><i class="fa-solid fa-tag me-2"></i>Bảng phân loại</a>
+                            <a class="dropdown-item text-light" href="/important-page"><i class="fa-solid fa-star me-2"></i>Quan trọng</a>
+                            <div class="dropdown-divider bg-white"></div>
+                            <a class="dropdown-item text-light" href="/create-job"><i class="fa-solid fa-circle-plus me-2"></i>Thêm công việc</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown me-5">
-                        <a class="nav-link-custom nav-link dropdown-toggle" href="#" id="navbarDropdownStaff" role="button"
+                        <a class="nav-link-custom nav-link dropdown-toggle text-light" href="#" id="navbarDropdownStaff" role="button"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="me-1 fa-solid fa-user-group"></i>
                             Nhân lực
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownStaff">
-                            <a class="dropdown-item" href="#"><i class="fa-solid fa-users me-2"></i>Các nhân sự</a>
-                            <a class="dropdown-item" href="#"><i class="fa-solid fa-people-group me-2"></i>Các bộ phận</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#"><i class="fa-solid fa-circle-plus me-2"></i>Thêm mới</a>
-                            <a class="dropdown-item" href="#"><i class="fa-solid fa-user-plus me-2"></i>Mời nhân sự</a>
+                        <div class="dropdown-menu bg-black" aria-labelledby="navbarDropdownStaff">
+                            <a class="dropdown-item text-light" href="#"><i class="fa-solid fa-users me-2"></i>Các nhân sự</a>
+                            <a class="dropdown-item text-light" href="#"><i class="fa-solid fa-people-group me-2"></i>Các bộ phận</a>
+                            <div class="dropdown-divider bg-white"></div>
+                            <a class="dropdown-item text-light" href="#"><i class="fa-solid fa-circle-plus me-2"></i>Thêm mới</a>
+                            <a class="dropdown-item text-light" href="#"><i class="fa-solid fa-user-plus me-2"></i>Mời nhân sự</a>
                         </div>
                     </li>
-                    <!-- <li class="nav-item mr-3">
-                        <a class="nav-link-custom nav-link" href="#"><i class="me-1 fa-solid fa-clock"></i>Trễ hạn</a>
-                    </li> -->
                     <li class="nav-item me-5">
-                        <a class="nav-link-custom nav-link" href="/calendar-route"><i class="me-1 fa-solid fa-calendar"></i>Lịch làm việc</a>
+                        <a class="nav-link-custom nav-link text-light" href="/calendar-route"><i class="me-2 fa-solid fa-calendar"></i>Lịch làm việc</a>
                     </li>
-                    <!-- <li class="nav-item mr-3">
-                        <a class="nav-link-custom nav-link" href="#"><i class="me-1 fa-solid fa-file"></i>Tài liệu</a>
-                    </li> -->
-                    <!-- <li class="nav-item dropdown mr-3">
-                        <a class="nav-link-custom nav-link dropdown-toggle" href="#" id="navbarDropdownMore" role="button"
-                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="me-1 fa-solid fa-ellipsis-vertical"></i>Hơn nữa
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMore">
-                            <a class="dropdown-item" href="#"><i class="fa-solid fa-clock-rotate-left me-2"></i>Hoạt động gần đây</a>
-                            <a class="dropdown-item" href="#"><i class="fa-solid fa-dollar-sign ms-1 me-2"></i>Lịch sử thanh toán</a>
-                            <a class="dropdown-item" href="#"><i class="fa-solid fa-book-open me-2"></i>Hướng dẫn</a>
-                            <a class="dropdown-item" href="#"><i class="fa-solid fa-phone me-2"></i>Hỗ trợ</a>
-                            <a class="dropdown-item" href="#"><i class="fa-solid fa-handshake me-2"></i>Góp ý</a>
-                            <div class="dropdown-divider"></div>
-                        </div>
-                    </li> -->
                 </ul>
             </div>
         </div>
-    
     </nav>

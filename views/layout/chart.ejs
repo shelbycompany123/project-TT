@@ -1,0 +1,28 @@
+<div id="chart" style="width: 100%; height: 400px;">
+    <canvas id="myChart" style="width: 100%; height: 100%;"></canvas>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script>
+    const xValues = ["Mới", "Đang thực hiện", "Chờ duyệt", "Hoàn Thành", "Tạm dừng "];
+        const yValues = [5, 8, 3, 15, 2];
+        const barColors = ["#007bff", "#ffc107", "#6c757d", "#28a745", "#dc3545"];
+
+        new Chart("myChart", {
+            type: "pie",
+            data: {
+                labels: xValues,
+                datasets: [{
+                    backgroundColor: barColors,
+                    data: yValues
+                }]
+            },
+            options: {
+                title: {
+                    display: true,
+                    text: "Cá nhân"
+                }
+            }
+        });
+</script>

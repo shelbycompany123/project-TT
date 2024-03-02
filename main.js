@@ -18,7 +18,7 @@ const tableRoute = require('./routes/routes');
 app.use("", tableRoute);
 
 app.get('/', (req, res) => {
-    res.render('index');
+    res.render('index', {title: 'Trang chủ | Quản lý công việc'});
 });
 
 // Start the server

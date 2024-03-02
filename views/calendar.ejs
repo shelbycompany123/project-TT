@@ -2,12 +2,33 @@
 
 <div class="container mt-3" style="height: 700px;">
     <div class="row">
-        <div class="col-md-8">
+        <!-- Calendar -->
+            <%- include('./layout/calendar-v.ejs') %>
+        <!-- Calendar -->
+        <div class="col-md-4 animate__animated animate__fadeInUp">
+            <div class="card border-secondary">
+                <div class="card-header bg-black text-white">
+                    <h5 class="card-title mb-0">Các công việc bắt đầu trong hôm nay</h5>
+                </div>
+                <div class="card-footer bg-black text-light">
+                    Ngày hôm nay: 24/02/2024 <!-- Đổi ngày hiện tại tùy theo nhu cầu -->
+                </div>
+                <div class="card-body bg-black text-light align-items-center">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <p class="card-text mb-0 mr-2">Số công việc hôm nay:</p>
+                        </div>
+                        <div>
+                            <p class="card-text mb-0" style="font-size: 20px; font-weight: bold;">3</p>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
         </div>
-        <div class="col-md-4">
+    </div>
+</div>
 
-        </div>
     </div>
 </div>
 

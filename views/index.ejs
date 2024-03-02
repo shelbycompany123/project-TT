@@ -1,12 +1,12 @@
 <%- include('./layout/header') %> <!-- Include the header -->
 
-<div class="container mt-3">
+<div class="container mt-3 bg-dark-subtle">
     <div class="row">
         <!-- Phần Mới cập nhật -->
-        <div class="col-md-8">
-            <h2 class="mb-3">Mới cập nhật</h2>
+        <div class="col-md-8 bg-black">
+            <h2 class="mb-3 text-light animate__animated animate__fadeInLeft">Mới cập nhật</h2>
             <hr class="dropdown-divider">
-            <div class="card mb-3 animate__animated animate__fadeInLeft">
+            <div class="card mb-3 bg-dark text-light animate__animated animate__fadeInLeft">
                 <div class="card-body">
                     <div class="row">
                         <div class="col-md-3 d-flex justify-content-center align-items-center">
@@ -24,12 +24,12 @@
                             </div>
                             <h5 class="card-title">Công việc mẫu - Hướng dẫn sử dụng phần mềm</h5>
                             <p class="card-text"><b>Tạo lúc </b>10:50:09 sa, Thứ Hai, 19 tháng 2 năm 2024</p>
-                            <button type="button" class="btn btn-primary">Nhấn để hoàn thành công việc</button>
+                            <button type="button" class="btn text-light" style="background-color: black;">Nhấn để hoàn thành công việc</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card mb-3 animate__animated animate__fadeInLeft">
+            <div class="card mb-3 bg-dark text-light animate__animated animate__fadeInLeft">
                 <div class="card-body">
                     <div class="row">
                         <div class="col-md-3 d-flex justify-content-center align-items-center">
@@ -47,24 +47,22 @@
                             </div>
                             <h5 class="card-title">Công việc mẫu - Hướng dẫn sử dụng phần mềm</h5>
                             <p class="card-text"><b>Tạo lúc </b>10:50:09 sa, Thứ Hai, 19 tháng 2 năm 2024</p>
-                            <button type="button" class="btn btn-primary">Nhấn để hoàn thành công việc</button>
+                            <button type="button" class="btn text-light" style="background-color: black;">Nhấn để hoàn thành công việc</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         
-    
         <!-- Phần Tổng quan -->
-        <div class="col-md-4 animate__animated animate__fadeInUp">
-            <h2 class="mb-3">Tổng quan</h2>
+        <div class="col-md-4 bg-black text-light">
+            <h2 class="mb-3 animate__animated animate__fadeInUp">Tổng quan</h2>
             <hr class="dropdown-divider">
-            <div class="card">
+            <div class="card bg-dark animate__animated animate__fadeInUp">
                 <div class="card-body">
                     <!-- Biểu đồ hình tròn -->
-                    <div id="chart" style="width: 100%; height: 400px;">
-                        <canvas id="myChart" style="width: 100%; height: 100%;"></canvas>
-                    </div>
+                    <%- include('./layout/chart') %>
+                    
                     <!-- Các mục -->
                     <ul class="list-group mt-3">
                         <li class="list-group-item d-flex justify-content-between align-items-center">
@@ -94,7 +92,7 @@
                 <div class="col-md-12">
                     <p>Bộ phận</p>
                     <hr class="dropdown-divider">
-                    <div class="card mb-3">
+                    <div class="card mb-3 bg-dark text-light">
                         <div class="card-body">
                             <h5 class="card-title">Ban lãnh đạo</h5>
                             <div class="progress mb-2">
@@ -105,7 +103,7 @@
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <div class="card mb-3">
+                    <div class="card mb-3 bg-dark text-light">
                         <div class="card-body">
                             <h5 class="card-title">Phòng kế toán</h5>
                             <div class="progress mb-2">
@@ -116,7 +114,7 @@
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <div class="card mb-3">
+                    <div class="card mb-3 bg-dark text-light">
                         <div class="card-body">
                             <h5 class="card-title">Phòng kinh doanh</h5>
                             <div class="progress mb-2">
@@ -127,7 +125,7 @@
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <div class="card">
+                    <div class="card bg-dark text-light">
                         <div class="card-body">
                             <h5 class="card-title">Phòng kỹ thuật</h5>
                             <div class="progress mb-2">
@@ -138,24 +136,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="row mt-3">
-                <div class="col-md-12 mb-3">
-                    <p>Thẻ thông dụng</p>
-                    <div class="dropdown-divider"></div>
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">#1 r&d (1 công việc)</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">#1 công việc mẫu (1 công việc)</h5>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </div>
 </div>
