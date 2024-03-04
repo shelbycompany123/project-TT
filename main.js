@@ -11,7 +11,7 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 // Cấu hình thư mục chứa các view (các tệp EJS)
-app.set('views', [__dirname + '/views', __dirname + '/views/jobs', __dirname + '/views/staff']);
+app.set('views', [__dirname + '/views', __dirname + '/views/jobs', __dirname + '/views/staff', __dirname + '/views/user']);
 
 //Route prefix
 const tableRoute = require('./routes/routes');

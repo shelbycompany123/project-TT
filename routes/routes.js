@@ -14,4 +14,13 @@ router.get('/calendar-route', (req, res) => {
     res.render('calendar', {title: 'Lịch làm việc | Tự động lên lịch công việc'});
 })
 
+//User
+router.get('/edit-profile', (req, res) => {
+    res.render('update-profile', {title: 'Thông tin cá nhân | Quản lý thông tin nhân viên'});
+})
+
+router.get('/change-password', (req, res) => {
+    res.render('update-password', {title: 'Thay đổi mật khẩu | Quản lý thông tin nhân viên'});
+})
+
 module.exports = router;
